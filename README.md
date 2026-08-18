@@ -1,91 +1,83 @@
-# Ames Housing Data Analysis
+# 24ADI204 - Data Science & Visualization
 
-## Overview
+## Team 8
 
-This project analyzes the **Ames Housing dataset** using Python. The goal is to clean the data, explore relationships between housing features, and create visualizations that help understand factors affecting house prices.
+This repository contains the coursework, weekly activities, data
+analysis, data cleaning, visualizations, exploratory analysis, and
+project work completed for the **Data Science & Visualization**
+course.
 
-## Objectives
+---
 
-* Understand the structure of the dataset
-* Handle missing values
-* Detect potential outliers
-* Perform exploratory data analysis
-* Visualize important relationships
-* Identify factors related to house prices
+## Course Information
 
-## Tools Used
+| Item | Details |
+|------|---------|
+| Course Code | 24ADI204 |
+| Course | Data Science & Visualization |
+| Team | Team 8 |
+| Academic Year | 2026 |
+| Repository | 24ADI204_DSV_Team8 |
 
-* Python
-* Pandas
-* NumPy
-* Matplotlib
-* Seaborn
-* Jupyter Notebook
+---
 
-## Project Workflow
+## Team Members
 
-```text
-Data Collection
-      ↓
-Data Understanding
-      ↓
-Data Cleaning
-      ↓
-Outlier Detection
-      ↓
-Exploratory Data Analysis
-      ↓
-Visualization
-      ↓
-Findings
-```
+| Name | Register Number | Primary Contribution |
+|------|-----------------|----------------------|
+| Tarun | 24ADI204 | Data Analysis, Visualization & Project Work |
+| Team Member 2 | XXXXX | XXXXX |
+| Team Member 3 | XXXXX | XXXXX |
+| Team Member 4 | XXXXX | XXXXX |
 
-## Progress
+---
 
-### Week 1
+## About the Repository
 
-* Dataset selection
-* Python/Jupyter setup
-* Initial understanding of the project
+The repository is organized to maintain the team's weekly coursework
+and semester project in a structured and version-controlled
+environment.
 
-### Week 2
+It includes:
 
-* Dataset inspection
-* Data types and structure
-* Initial missing-value analysis
+- Weekly practical activities
+- Python programs and notebooks
+- Data cleaning
+- Exploratory Data Analysis (EDA)
+- Data visualization
+- Statistical analysis
+- Project datasets
+- Descriptive reports
+- Supporting documentation
 
-### Week 3
+The repository is continuously updated as the course progresses.
 
-* Missing-value handling
-* Imputation based on variable meaning
-* Boxplot-based outlier detection
-* Z-score analysis
-* Creation of cleaned dataset
+---
 
-The cleaned dataset is saved as:
+## Repository Structure
 
 ```text
-AmesHousing_Cleaned.csv
-```
-
-## Dataset
-
-The Ames Housing dataset contains information about residential properties, including house quality, size, construction, garage, basement, neighborhood, and final sale price.
-
-The main variable of interest is:
-
-```text
-SalePrice
-```
-
-## Next Steps
-
-* Exploratory data analysis
-* Correlation analysis
-* Feature relationships
-* Additional visualizations
-* Final findings and conclusions
-
-## Team
-
-**DSV Project Team 8**
+24ADI204_DSV_Team8/
+│
+├── Week-1/
+│   └── Weekly activities and exercises
+│
+├── Week-2/
+│   └── Weekly activities and exercises
+│
+├── Week-3/
+│   ├── Data cleaning
+│   ├── Exploratory Data Analysis
+│   └── Descriptive reporting
+│
+├── Dataset/
+│   └── Datasets used for analysis and project work
+│
+├── Reports/
+│   └── Project and weekly reports
+│
+├── requirements.txt
+│
+├── .gitignore
+│
+└── README.md
