@@ -25,7 +25,7 @@ course.
 
 | Name | Register Number | Primary Contribution |
 |------|-----------------|----------------------|
-| Tarun | 24ADI204 | Data Analysis, Visualization & Project Work |
+| Tarun | 25BAD123 | Data Analysis, Visualization & Project Work |
 | Team Member 2 | XXXXX | XXXXX |
 | Team Member 3 | XXXXX | XXXXX |
 | Team Member 4 | XXXXX | XXXXX |
