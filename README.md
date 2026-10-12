@@ -26,9 +26,9 @@ course.
 | Name | Register Number | Primary Contribution |
 |------|-----------------|----------------------|
 | Tarun | 25BAD123 | Data Analysis, Visualization & Project Work |
-| Santosh P | 25BAD101 | XXXXX |
-| Siva Chandran | 25BAD108 | XXXXX |
-| Santosh M | 25BAD100 | XXXXX |
+| Santhosh P | 25BAD101 | Data Cleaning & Preprocessing |
+| Siva Chandran | 25BAD108 | Feature Engineering & Statistical Modeling |
+| Santhosh M | 25BAD100 | Documentation, Reporting & Presentation |
 
 ---
 
