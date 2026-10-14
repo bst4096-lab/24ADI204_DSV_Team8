@@ -1,40 +1,59 @@
-# 24ADI204 - Data Science & Visualization
+# 24ADI204 – Data Science & Visualization
 
-## Team 8 | House Price Analysis
+**Team 8 | Ames Housing Analysis**
 
-This repository contains the team's weekly coursework and a reproducible final-analysis layer for the Ames Housing dataset. The existing `Week 1` through `Week 6` folders are retained as coursework history; reusable code and final outputs live in `final_project/`.
+Repository for the 24ADI204 Data Science & Visualization course project. The project uses the Ames Housing dataset to explore data quality, clean and prepare data, engineer features, and communicate findings through statistical summaries and visualizations.
 
-## Course information
+## Course and Team
 
 | Item | Details |
 |---|---|
-| Course code | 24ADI204 |
-| Course | Data Science & Visualization |
+| Course | 24ADI204 – Data Science & Visualization |
+| Project | Ames Housing Analysis |
 | Team | Team 8 |
-| Academic year | 2026 |
 
-## Team
+### Team members
 
-| Name | Register number | Primary contribution |
+| Name | Register number | Main contribution |
 |---|---|---|
-| Tarun | 25BAD123 | Data analysis, visualization and project work |
+| Tarun | 25BAD123 | Data analysis, visualization, and project work |
 | Santhosh P | 25BAD101 | Data cleaning and preprocessing |
-| Siva Chandran | 25BAD108 | Feature engineering and statistical modeling |
-| Santhosh M | 25BAD100 | Documentation, reporting and presentation |
+| Siva Chandran | 25BAD108 | Feature engineering and statistical analysis |
+| Santhosh M | 25BAD100 | Documentation, reporting, and presentation |
+
+## Project objectives
+
+- Inspect the dataset's structure, data types, missing values, and duplicate records.
+- Clean and prepare data while avoiding unnecessary loss of information.
+- Explore relationships between housing attributes and sale prices.
+- Create derived features when the required source columns are available.
+- Produce reproducible summaries and visualizations.
+- Document the workflow so another team member can rerun and review it.
 
 ## Project workflow
 
-1. Keep the original weekly submissions in `Week 1/` through `Week 6/`.
-2. Use `final_project/src/` for reusable data-cleaning, feature-engineering and visualization code.
-3. Run the data audit before interpreting differences between weekly datasets.
-4. Generate reproducible summaries and figures from a selected CSV.
-5. Record assumptions and interpret results as associations, not proof of causation.
+The weekly coursework develops the analysis from initial inspection through later-stage analytical techniques. Refer to the notebooks and reports in each weekly folder for the exact work and results recorded for that week.
+
+- **Initial exploration:** inspect the dataset, columns, data types, and target variable.
+- **Cleaning and preprocessing:** review missing values, duplicates, and inconsistent representations.
+- **Exploratory data analysis:** summarize distributions and examine relationships with `SalePrice`.
+- **Feature engineering:** derive additional variables when the required source columns are present.
+- **Visualization and statistical analysis:** generate plots and summary tables.
+- **Later-stage analysis:** consult the relevant coursework notebook for dimensionality reduction and feature-selection work, including PCA where covered.
 
 ## Repository structure
 
+The repository contains weekly coursework files and a separate `final_project/` workflow. The exact files in each weekly folder may evolve as coursework is updated.
+
 ```text
 24ADI204_DSV_Team8/
-├── Week 1/ ... Week 6/       # Original weekly coursework and reports
+├── Week 1/
+├── Week 2/
+├── Week 3/
+├── Week 4/
+├── Week 5/
+├── Week 6/
+├── Week 7/                 # If maintained as a separate folder
 ├── final_project/
 │   ├── src/
 │   │   ├── data_cleaning.py
@@ -45,6 +64,7 @@ This repository contains the team's weekly coursework and a reproducible final-a
 │   │   └── run_eda.py
 │   ├── tests/
 │   │   └── test_pipeline.py
+│   ├── outputs/
 │   └── README.md
 ├── requirements.txt
 ├── .gitignore
@@ -52,51 +72,133 @@ This repository contains the team's weekly coursework and a reproducible final-a
 └── README.md
 ```
 
-## Fedora setup
+Weekly folders may contain notebooks, reports, spreadsheets, or presentation files. Use the actual contents of each folder as the source of truth.
 
-Run these commands from the repository root:
+## Technology stack
+
+- Python
+- pandas and NumPy for data manipulation
+- Matplotlib and Seaborn for visualization
+- Jupyter Notebook for interactive coursework
+- pytest for automated checks
+- Git and GitHub for version control
+
+## Setup
+
+Python 3.10 or newer is recommended.
+
+### 1. Clone the repository
 
 ```bash
-sudo dnf install -y git python3 python3-pip
+git clone https://github.com/bst4096-lab/24ADI204_DSV_Team8.git
+cd 24ADI204_DSV_Team8
+```
+
+### 2. Create and activate a virtual environment
+
+On Linux, including Fedora:
+
+```bash
 python3 -m venv .venv
 source .venv/bin/activate
+```
+
+### 3. Install dependencies
+
+```bash
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
 
-## Audit the weekly data
-
-The project previously showed different row counts in saved notebook outputs. Do not silently pick a count and call the mystery solved; inspect the actual files first.
+### 4. Run checks
 
 ```bash
-python final_project/scripts/audit_dataset.py "Week 3/AmesHousing_Uncleaned.csv" "Week 5/Cleaned_AmesHousing_Week5.csv"
+python -m pytest final_project/tests -q
+git diff --check
 ```
 
-Add more paths as needed. The audit reports shape, duplicate rows, missing values, and whether `SalePrice` is present.
+Run Python commands while the virtual environment is active. Otherwise, your system Python may not have the project's dependencies installed.
 
-## Run the final EDA
+## Final-project scripts
+
+Run commands from the repository root.
+
+### Audit a dataset
 
 ```bash
-python final_project/scripts/run_eda.py "Week 3/AmesHousing_Uncleaned.csv" --output-dir final_project/outputs
+python final_project/scripts/audit_dataset.py --help
 ```
 
-The script writes CSV summaries and PNG figures under `final_project/outputs/`. Outputs are generated locally and should be reviewed before committing.
+Use the help output to confirm supported arguments and provide the dataset path. The audit reports dimensions, duplicate rows, missing-value information, and whether expected target/schema elements are present.
 
-## Run tests
+### Run exploratory analysis
+
+```bash
+python final_project/scripts/run_eda.py --help
+```
+
+Use the displayed arguments to select the input dataset and output location. The EDA workflow produces summary tables and plots, including target-distribution and missingness views where supported by the input data.
+
+### Run tests
 
 ```bash
 python -m pytest final_project/tests -q
 ```
 
-## Important analysis rules
+Tests check selected cleaning and feature-engineering behavior. Passing tests do not prove every notebook result or dataset is correct; they verify only the behaviors covered by the tests.
 
-- The audit does not automatically delete rows or fill missing values.
-- Cleaning and feature engineering are explicit functions, so notebook work can reuse them instead of copying slightly different versions.
-- `HouseAge` and `RemodAge` require a sale-year column. Negative ages are treated as invalid and changed to missing values.
-- `TotalHouseArea` is a derived proxy, not an official property measurement. Avoid using it together with all of its component columns without checking for redundancy.
-- If predictive modeling is added later, split into train/test sets before fitting imputers, scalers, encoders, or feature selection. Fit preprocessing on training data only.
-- Correlation is not causation. Housing prices have confounders; a heatmap is not a tiny oracle.
+## Module overview
 
-## Dependencies
+- **`data_cleaning.py`** — cleaning helpers for normalizing missing-value markers and optionally handling duplicate rows or entirely empty columns.
+- **`feature_engineering.py`** — creates derived housing features when the necessary source columns are available.
+- **`visualization.py`** — reusable plotting functions for exploratory analysis.
+- **`audit_dataset.py`** — reports structural and data-quality information.
+- **`run_eda.py`** — runs the supported exploratory-analysis workflow and writes outputs.
+- **`test_pipeline.py`** — automated checks for selected pipeline behavior.
 
-See `requirements.txt`. Use a virtual environment so the system Python installation remains untouched.
+Generated tables and plots are stored under `final_project/outputs/`. Regenerate them when input data or analysis changes rather than assuming existing outputs are current.
+
+## Data and interpretation notes
+
+- Missing values should be examined in context. A blank value can mean “not applicable” rather than a value that should automatically be imputed.
+- The project includes multiple versions of the Ames Housing data. Matching row and column counts or missing-value totals alone do **not** prove that two files contain identical records.
+- Some coursework columns contain spaces, such as `Year Built` and `Gr Liv Area`, while reusable feature-engineering code expects unspaced names, such as `YearBuilt` and `GrLivArea`. Align column names before relying on those derived features; otherwise, some features may be skipped.
+- Correlation does not prove causation.
+- When building predictive models, fit preprocessing steps using training data only. Learning transformations from the full dataset can cause data leakage.
+- Results depend on the exact input file and preprocessing steps. Record those choices when reporting results.
+
+## Version control workflow
+
+The active development branch for reproducibility and analysis improvements is:
+
+```bash
+git switch feature/reproducible-final-analysis
+git pull
+```
+
+Changes have been pushed to GitHub on this branch. Review them against `main` through a pull request before merging.
+
+For future changes:
+
+```bash
+git status
+git diff --check
+python -m pytest final_project/tests -q
+git add <files-to-include>
+git commit -m "Describe the change"
+git push
+```
+
+Avoid committing virtual environments, Python cache files, temporary notebook checkpoints, or generated files that are not intended to be version-controlled.
+
+## Future improvements
+
+- Make feature engineering handle spaced and unspaced column names consistently.
+- Add tests for missing columns, unexpected data types, and edge cases.
+- Record dataset provenance and preprocessing decisions more explicitly.
+- Add automated checks through GitHub Actions.
+- Keep notebook outputs, reports, and generated artifacts synchronized with the scripts and documented workflow.
+
+## Repository
+
+GitHub: https://github.com/bst4096-lab/24ADI204_DSV_Team8
