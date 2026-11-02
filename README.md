@@ -32,14 +32,20 @@ Repository for the 24ADI204 Data Science & Visualization course project. The pro
 
 ## Project workflow
 
-The weekly coursework develops the analysis from initial inspection through later-stage analytical techniques. Refer to the notebooks and reports in each weekly folder for the exact work and results recorded for that week.
+The weekly coursework develops the analysis continuously from initial inspection through later-stage analytical techniques. Each week's output directly serves as the input foundation for subsequent weeks.
 
-- **Initial exploration:** inspect the dataset, columns, data types, and target variable.
-- **Cleaning and preprocessing:** review missing values, duplicates, and inconsistent representations.
-- **Exploratory data analysis:** summarize distributions and examine relationships with `SalePrice`.
-- **Feature engineering:** derive additional variables when the required source columns are present.
-- **Visualization and statistical analysis:** generate plots and summary tables.
-- **Later-stage analysis:** consult the relevant coursework notebook for dimensionality reduction and feature-selection work, including PCA where covered.
+### Weekly Data Pipeline & Continuity Matrix
+
+| Week | Focus Area | Input File | Key Operations / Transforms | Output File | Dataset Shape | Pipeline Status |
+|---|---|---|---|---|---|---|
+| **Week 1** | Team Formation & Data Hunting | `AmesHousing_Uncleaned.xlsx` | Raw data ingestion, preliminary schema inspection, identifying target `SalePrice` | *(raw baseline)* | (3,130, 82) | Verified Raw Source |
+| **Week 2** | "Know Your Data" & Preliminary EDA | `AmesHousing_Uncleaned.xlsx` | Data type mapping, initial missing value profiling, distribution overview | *(exploratory)* | (3,130, 82) | Continuous from W1 |
+| **Week 3** | Data Cleaning & Outlier Profiling | `AmesHousing_Uncleaned.xlsx` / `.csv` | Deduplication (200 duplicate rows dropped), domain-informed imputation (None/0 for structural absences, median/mode for incidental nulls) | `AmesHousing_Uncleaned_Cleaned.csv` | (2,930, 82) | Continuous clean baseline |
+| **Week 4** | Deep Dive EDA | `Week 3/AmesHousing_Uncleaned_Cleaned.csv` | Univariate distributions, neighborhood price dispersion, correlation analysis | *(visualizations)* | (2,930, 82) | Ingests W3 Cleaned |
+| **Week 5** | Statistical Analysis & Data Audit | `Week 3/AmesHousing_Uncleaned_Cleaned.csv` | Formal data auditing (0 nulls verified), parametric normality tests, hypothesis testing | `Cleaned_AmesHousing_Week5.csv` | (2,930, 82) | Ingests W3, saves W5 baseline |
+| **Week 6** | Feature Engineering | `Week 5/Cleaned_AmesHousing_Week5.csv` | Domain features (`HouseAge`, `TotalBathrooms`, etc.), `log1p(SalePrice)`, MinMax/Standard/Robust scaling, One-Hot & Ordinal encoding | `Feature_Engineered_AmesHousing.csv` | (2,930, 284) | Ingests W5 Cleaned |
+| **Week 7** | Dimensionality Reduction & PCA | `Week 6/Feature_Engineered_AmesHousing.csv` | Variance Threshold filtering, Supervised selection (Random Forest & F-regression), PCA (95% variance) | `Selected_Features_AmesHousing.csv`<br>`PCA_Transformed_AmesHousing.csv` | (2,930, 44)<br>(2,930, 180) | Ingests W6 Engineered |
+
 
 ## Repository structure
 
