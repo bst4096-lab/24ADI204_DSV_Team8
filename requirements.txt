@@ -1,9 +1,5 @@
-ipykernel
-pandas
-numpy
-matplotlib
-seaborn
-openpyxl
-scikit-learn
-jupyter
-pytest
+streamlit>=1.40
+pandas>=2.0
+numpy>=1.26
+plotly>=5.20
+scikit-learn>=1.4

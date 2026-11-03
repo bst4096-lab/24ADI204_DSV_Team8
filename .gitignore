@@ -12,3 +12,4 @@ venv/
 
 # Test and analysis caches
 .pytest_cache/
+.agents/
