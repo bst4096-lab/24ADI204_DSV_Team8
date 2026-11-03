@@ -1,0 +1,7 @@
+WEEK 4 – EDA OBSERVATIONS
+
+1. SalePrice: mean = 180,796.06, median = 160,000.00, skewness = 1.744. The distribution is positively skewed.
+2. The highest median SalePrice among the observed Overall Qual groups is for rating 10, at 451,950.00. This is a descriptive group comparison, not a causal result.
+3. Gr Liv Area has a Pearson correlation of 0.707 with SalePrice, showing a positive linear association. This does not establish causation.
+4. Median SalePrice varies by neighbourhood: the highest observed median is StoneBr (319,000.00) and the lowest is MeadowV (88,250.00).
+5. The IQR rule flags 75 Gr Liv Area records as potential outliers. These records should be inspected, not automatically deleted.

@@ -1,0 +1,5 @@
+Metric,Value
+Features after variance threshold,51.0
+Multicollinearity threshold,0.9
+Features retained after pairwise pruning,47.0
+Features removed due to pairwise correlation,4.0

@@ -1,0 +1,83 @@
+,Data Type,Non-Missing,Missing Values,Missing Percent,Unique Values
+Order,int64,2930,0,0.0,2930
+PID,int64,2930,0,0.0,2930
+MS SubClass,float64,2930,0,0.0,16
+MS Zoning,str,2930,0,0.0,7
+Lot Frontage,float64,2930,0,0.0,126
+Lot Area,int64,2930,0,0.0,1960
+Street,str,2930,0,0.0,2
+Alley,str,2930,0,0.0,3
+Lot Shape,str,2930,0,0.0,4
+Land Contour,str,2930,0,0.0,4
+Utilities,str,2930,0,0.0,3
+Lot Config,str,2930,0,0.0,5
+Land Slope,str,2930,0,0.0,3
+Neighborhood,str,2930,0,0.0,28
+Condition 1,str,2930,0,0.0,9
+Condition 2,str,2930,0,0.0,8
+Bldg Type,str,2930,0,0.0,5
+House Style,str,2930,0,0.0,8
+Overall Qual,int64,2930,0,0.0,10
+Overall Cond,int64,2930,0,0.0,9
+Year Built,int64,2930,0,0.0,118
+Year Remod/Add,int64,2930,0,0.0,61
+Roof Style,str,2930,0,0.0,6
+Roof Matl,str,2930,0,0.0,8
+Exterior 1st,str,2930,0,0.0,16
+Exterior 2nd,str,2930,0,0.0,17
+Mas Vnr Type,str,2930,0,0.0,5
+Mas Vnr Area,float64,2930,0,0.0,445
+Exter Qual,str,2930,0,0.0,4
+Exter Cond,str,2930,0,0.0,5
+Foundation,str,2930,0,0.0,6
+Bsmt Qual,str,2930,0,0.0,6
+Bsmt Cond,str,2930,0,0.0,6
+Bsmt Exposure,str,2930,0,0.0,5
+BsmtFin Type 1,str,2930,0,0.0,7
+BsmtFin SF 1,float64,2930,0,0.0,995
+BsmtFin Type 2,str,2930,0,0.0,7
+BsmtFin SF 2,float64,2930,0,0.0,274
+Bsmt Unf SF,float64,2930,0,0.0,1137
+Total Bsmt SF,float64,2930,0,0.0,1058
+Heating,str,2930,0,0.0,6
+Heating QC,str,2930,0,0.0,5
+Central Air,str,2930,0,0.0,2
+Electrical,str,2930,0,0.0,5
+1st Flr SF,int64,2930,0,0.0,1083
+2nd Flr SF,int64,2930,0,0.0,635
+Low Qual Fin SF,int64,2930,0,0.0,36
+Gr Liv Area,int64,2930,0,0.0,1292
+Bsmt Full Bath,float64,2930,0,0.0,4
+Bsmt Half Bath,float64,2930,0,0.0,3
+Full Bath,int64,2930,0,0.0,5
+Half Bath,int64,2930,0,0.0,3
+Bedroom AbvGr,int64,2930,0,0.0,8
+Kitchen AbvGr,int64,2930,0,0.0,4
+Kitchen Qual,str,2930,0,0.0,5
+TotRms AbvGrd,int64,2930,0,0.0,14
+Functional,str,2930,0,0.0,8
+Fireplaces,int64,2930,0,0.0,5
+Fireplace Qu,str,2930,0,0.0,6
+Garage Type,str,2930,0,0.0,7
+Garage Yr Blt,float64,2930,0,0.0,104
+Garage Finish,str,2930,0,0.0,4
+Garage Cars,float64,2930,0,0.0,6
+Garage Area,float64,2930,0,0.0,603
+Garage Qual,str,2930,0,0.0,6
+Garage Cond,str,2930,0,0.0,6
+Paved Drive,str,2930,0,0.0,3
+Wood Deck SF,int64,2930,0,0.0,380
+Open Porch SF,int64,2930,0,0.0,252
+Enclosed Porch,int64,2930,0,0.0,183
+3Ssn Porch,int64,2930,0,0.0,31
+Screen Porch,int64,2930,0,0.0,121
+Pool Area,int64,2930,0,0.0,14
+Pool QC,str,2930,0,0.0,5
+Fence,str,2930,0,0.0,5
+Misc Feature,str,2930,0,0.0,6
+Misc Val,int64,2930,0,0.0,38
+Mo Sold,int64,2930,0,0.0,12
+Yr Sold,int64,2930,0,0.0,5
+Sale Type,str,2930,0,0.0,10
+Sale Condition,str,2930,0,0.0,6
+SalePrice,int64,2930,0,0.0,1032

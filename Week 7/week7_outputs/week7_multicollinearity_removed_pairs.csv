@@ -1,0 +1,5 @@
+Dropped feature,Retained correlated feature,Absolute pairwise correlation,Absolute target correlation (dropped),Absolute target correlation (retained)
+Year Built,HouseAge,0.9990551163189237,0.61548468655889,0.6159901149459074
+Year Remod/Add,RemodAge,0.9980080648924299,0.5861532883562371,0.5882849801822078
+Garage Cond_Enc,Garage Qual_Enc,0.9466711139262177,0.3516025798185112,0.3612201664416639
+Garage Yr Blt,Garage Qual_Enc,0.944454106604939,0.32790257079273705,0.3612201664416639

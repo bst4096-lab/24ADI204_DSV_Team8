@@ -1,0 +1,9 @@
+WEEK 5 – KEY STATISTICAL FINDINGS
+
+1. SalePrice mean = 180,796.06; median = 160,000.00; standard deviation = 79,886.69; skewness = 1.744; Fisher excess kurtosis = 5.119.
+2. The strongest absolute Pearson correlation with SalePrice among the analysed numeric features is Overall Qual (r = 0.799).
+3. The cleaned dataset contains 2,930 rows and 82 columns, with 0 missing cells and 0 duplicate rows.
+4. Pearson correlation for Overall Qual vs SalePrice: Reject H0 at alpha=0.05 (statistic=0.7993, p=0).
+5. Spearman rank correlation for Overall Qual vs SalePrice: Reject H0 at alpha=0.05 (statistic=0.8088, p=0).
+6. Pearson correlation for Gr Liv Area vs SalePrice: Reject H0 at alpha=0.05 (statistic=0.7068, p=0).
+7. Mann–Whitney U comparison of the two Overall Qual groups: Reject H0 at alpha=0.05 (U=1130407.50, p=1.67e-215). This is a rank-distribution comparison, not a test of equality of means.

@@ -1,0 +1,45 @@
+Feature,Encoding,Categories
+Exter Qual,Ordinal,Po → Fa → TA → Gd → Ex
+Exter Cond,Ordinal,Po → Fa → TA → Gd → Ex
+Bsmt Qual,Ordinal,None → Po → Fa → TA → Gd → Ex
+Bsmt Cond,Ordinal,None → Po → Fa → TA → Gd → Ex
+Heating QC,Ordinal,Po → Fa → TA → Gd → Ex
+Kitchen Qual,Ordinal,Po → Fa → TA → Gd → Ex
+Fireplace Qu,Ordinal,None → Po → Fa → TA → Gd → Ex
+Garage Qual,Ordinal,None → Po → Fa → TA → Gd → Ex
+Garage Cond,Ordinal,None → Po → Fa → TA → Gd → Ex
+Pool QC,Ordinal,None → Fa → TA → Gd → Ex
+Bsmt Exposure,Ordinal,None → No → Mn → Av → Gd
+BsmtFin Type 1,Ordinal,None → Unf → LwQ → Rec → BLQ → ALQ → GLQ
+BsmtFin Type 2,Ordinal,None → Unf → LwQ → Rec → BLQ → ALQ → GLQ
+Functional,Ordinal,Sal → Sev → Maj2 → Maj1 → Mod → Min2 → Min1 → Typ
+Garage Finish,Ordinal,None → Unf → RFn → Fin
+Paved Drive,Ordinal,N → P → Y
+Lot Shape,Ordinal,IR3 → IR2 → IR1 → Reg
+Land Slope,Ordinal,Sev → Mod → Gtl
+Utilities,Ordinal,ELO → NoSeWa → NoSewr → AllPub
+Fence,Ordinal,None → MnWw → GdWo → MnPrv → GdPrv
+Central Air,Ordinal,N → Y
+MS SubClass,One-Hot,16
+MS Zoning,One-Hot,7
+Street,One-Hot,2
+Alley,One-Hot,3
+Land Contour,One-Hot,4
+Lot Config,One-Hot,5
+Neighborhood,One-Hot,28
+Condition 1,One-Hot,9
+Condition 2,One-Hot,8
+Bldg Type,One-Hot,5
+House Style,One-Hot,8
+Roof Style,One-Hot,6
+Roof Matl,One-Hot,8
+Exterior 1st,One-Hot,16
+Exterior 2nd,One-Hot,17
+Mas Vnr Type,One-Hot,5
+Foundation,One-Hot,6
+Heating,One-Hot,6
+Electrical,One-Hot,5
+Garage Type,One-Hot,7
+Misc Feature,One-Hot,6
+Sale Type,One-Hot,10
+Sale Condition,One-Hot,6

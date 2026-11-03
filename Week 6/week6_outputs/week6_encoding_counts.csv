@@ -1,0 +1,3 @@
+Encoding method,Source features,Output encoded columns
+Ordinal encoding,21,21
+One-hot encoding,23,193

@@ -1,0 +1,2 @@
+Test,Method,H0,H1,U statistic,P-value,Alpha,Decision
+SalePrice distribution by Overall Qual group,Mann–Whitney U (two-sided),The two SalePrice distributions are the same,The two SalePrice distributions differ,1130407.5,1.6700750137797773e-215,0.05,Reject H0

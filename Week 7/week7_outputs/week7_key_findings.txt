@@ -1,0 +1,7 @@
+1. The Week 6 input contained 2,930 observations and 293 columns.
+2. Numeric predictors before filtering: 51.
+3. Variance threshold retained 51 predictors and removed 0.
+4. Pairwise correlation pruning retained 47 predictors and removed 4 highly correlated predictors at |r| >= 0.90.
+5. Combined F-regression and Random Forest ranking selected 40 original features.
+6. PCA retained 31 components for at least 95% variance (95.47% actual cumulative variance).
+7. PC1 and PC2 together explain 29.52% of variance.

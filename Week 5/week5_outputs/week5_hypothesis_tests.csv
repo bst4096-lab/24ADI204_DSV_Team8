@@ -1,0 +1,4 @@
+Test,Method,Null hypothesis,Alternative hypothesis,Statistic,P-value,N,Alpha,Decision
+Overall Qual vs SalePrice,Pearson correlation,Population Pearson correlation = 0,Population Pearson correlation != 0,0.7992617947690233,0.0,2930,0.05,Reject H0
+Overall Qual vs SalePrice,Spearman rank correlation,Population Spearman correlation = 0,Population Spearman correlation != 0,0.808800483142651,0.0,2930,0.05,Reject H0
+Gr Liv Area vs SalePrice,Pearson correlation,Population Pearson correlation = 0,Population Pearson correlation != 0,0.7067799209766279,0.0,2930,0.05,Reject H0

@@ -1,0 +1,9 @@
+Metric,Value
+Rows in source file,2930
+Columns in source file,293
+Raw text columns excluded,10
+Identifier columns excluded,2
+Target used for supervised ranking,SalePrice_Log
+Numeric predictor columns before filtering,51
+Feature columns with all missing values dropped,0
+Missing values in predictor matrix after preparation,0

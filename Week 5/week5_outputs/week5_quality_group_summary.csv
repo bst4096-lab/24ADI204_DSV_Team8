@@ -1,0 +1,3 @@
+Group,Properties,Mean SalePrice,Median SalePrice,Std Dev SalePrice
+Overall Qual >= 8,488,303665.01844262297,286000.0,91428.84407653935
+Overall Qual < 8,2442,156242.39434889436,148800.0,48669.82044387484

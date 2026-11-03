@@ -1,0 +1,4 @@
+Variance target,Components required,Original predictors entering PCA,Dimensionality reduction (%)
+80%,19,47,59.57
+90%,26,47,44.68
+95%,31,47,34.04

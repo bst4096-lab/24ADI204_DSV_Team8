@@ -1,0 +1,83 @@
+,Data Type,Non-Missing,Missing,Missing Percent,Unique Values
+Order,int64,2930,0,0.0,2930
+PID,int64,2930,0,0.0,2930
+Lot Area,int64,2930,0,0.0,1960
+Gr Liv Area,int64,2930,0,0.0,1292
+Bsmt Unf SF,float64,2930,0,0.0,1137
+1st Flr SF,int64,2930,0,0.0,1083
+Total Bsmt SF,float64,2930,0,0.0,1058
+SalePrice,int64,2930,0,0.0,1032
+BsmtFin SF 1,float64,2930,0,0.0,995
+2nd Flr SF,int64,2930,0,0.0,635
+Garage Area,float64,2930,0,0.0,603
+Mas Vnr Area,float64,2930,0,0.0,445
+Wood Deck SF,int64,2930,0,0.0,380
+BsmtFin SF 2,float64,2930,0,0.0,274
+Open Porch SF,int64,2930,0,0.0,252
+Enclosed Porch,int64,2930,0,0.0,183
+Lot Frontage,float64,2930,0,0.0,126
+Screen Porch,int64,2930,0,0.0,121
+Year Built,int64,2930,0,0.0,118
+Garage Yr Blt,float64,2930,0,0.0,104
+Year Remod/Add,int64,2930,0,0.0,61
+Misc Val,int64,2930,0,0.0,38
+Low Qual Fin SF,int64,2930,0,0.0,36
+3Ssn Porch,int64,2930,0,0.0,31
+Neighborhood,str,2930,0,0.0,28
+Exterior 2nd,str,2930,0,0.0,17
+MS SubClass,float64,2930,0,0.0,16
+Exterior 1st,str,2930,0,0.0,16
+TotRms AbvGrd,int64,2930,0,0.0,14
+Pool Area,int64,2930,0,0.0,14
+Mo Sold,int64,2930,0,0.0,12
+Overall Qual,int64,2930,0,0.0,10
+Sale Type,str,2930,0,0.0,10
+Condition 1,str,2930,0,0.0,9
+Overall Cond,int64,2930,0,0.0,9
+Condition 2,str,2930,0,0.0,8
+House Style,str,2930,0,0.0,8
+Roof Matl,str,2930,0,0.0,8
+Bedroom AbvGr,int64,2930,0,0.0,8
+Functional,str,2930,0,0.0,8
+MS Zoning,str,2930,0,0.0,7
+BsmtFin Type 1,str,2930,0,0.0,7
+BsmtFin Type 2,str,2930,0,0.0,7
+Garage Type,str,2930,0,0.0,7
+Roof Style,str,2930,0,0.0,6
+Foundation,str,2930,0,0.0,6
+Bsmt Qual,str,2930,0,0.0,6
+Bsmt Cond,str,2930,0,0.0,6
+Heating,str,2930,0,0.0,6
+Fireplace Qu,str,2930,0,0.0,6
+Garage Cars,float64,2930,0,0.0,6
+Garage Qual,str,2930,0,0.0,6
+Garage Cond,str,2930,0,0.0,6
+Misc Feature,str,2930,0,0.0,6
+Sale Condition,str,2930,0,0.0,6
+Lot Config,str,2930,0,0.0,5
+Bldg Type,str,2930,0,0.0,5
+Mas Vnr Type,str,2930,0,0.0,5
+Exter Cond,str,2930,0,0.0,5
+Bsmt Exposure,str,2930,0,0.0,5
+Heating QC,str,2930,0,0.0,5
+Electrical,str,2930,0,0.0,5
+Full Bath,int64,2930,0,0.0,5
+Kitchen Qual,str,2930,0,0.0,5
+Fireplaces,int64,2930,0,0.0,5
+Pool QC,str,2930,0,0.0,5
+Fence,str,2930,0,0.0,5
+Yr Sold,int64,2930,0,0.0,5
+Lot Shape,str,2930,0,0.0,4
+Land Contour,str,2930,0,0.0,4
+Exter Qual,str,2930,0,0.0,4
+Bsmt Full Bath,float64,2930,0,0.0,4
+Kitchen AbvGr,int64,2930,0,0.0,4
+Garage Finish,str,2930,0,0.0,4
+Alley,str,2930,0,0.0,3
+Utilities,str,2930,0,0.0,3
+Land Slope,str,2930,0,0.0,3
+Bsmt Half Bath,float64,2930,0,0.0,3
+Half Bath,int64,2930,0,0.0,3
+Paved Drive,str,2930,0,0.0,3
+Street,str,2930,0,0.0,2
+Central Air,str,2930,0,0.0,2

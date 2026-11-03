@@ -1,0 +1,4 @@
+Metric,Value
+Mean across standardized feature matrix,-1.8171958906931208e-15
+Standard deviation across standardized feature matrix,1.0
+Number of predictors entering PCA,47.0
